@@ -1,9 +1,12 @@
+import { ShoppingCartComponent } from './../components/shopping-cart/shopping-cart.component';
+import { ProductListComponent } from './../components/product-list/product-list.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
+import { NavbarComponent } from './../components/navbar/navbar.component';
 import { HomePage } from './home.page';
 
 @NgModule({
@@ -18,6 +21,11 @@ import { HomePage } from './home.page';
       }
     ])
   ],
-  declarations: [HomePage]
+  declarations: [
+    HomePage,
+    NavbarComponent,
+    ProductListComponent,
+    ShoppingCartComponent
+  ]
 })
 export class HomePageModule {}
